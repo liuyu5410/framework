@@ -10,6 +10,6 @@
 * [版本更新](5ban-ben-geng-xin.md)
 * [加密算法](6jia-mi-suan-fa.md)
 * 日志方法
-* 常用基类
+* [常用基类](chang-yong-ji-lei.md)
 * 本地数据存储
 
