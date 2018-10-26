@@ -18,9 +18,9 @@ public static void update(Activity activity,Map<String, String> params, String u
 
 ```java
 Map<String, String> params = new HashMap<String, String>();
-                params.put("device_type", "android");
-                params.put("apptype","1");
-                VersionUpdate.update(this,params,"http://www.ssqcc.com/platformapi/index.php?act=user&op=version",new UpdateCallback() {
+params.put("device_type", "android");
+params.put("apptype","1");
+VersionUpdate.update(this,params,url,new UpdateCallback() {
                     /**
                      * 解析json,自定义协议
                      *
@@ -51,6 +51,7 @@ Map<String, String> params = new HashMap<String, String>();
 
                     @Override
                     protected void hasNewApp(UpdateAppBean updateApp, UpdateAppManager updateAppManager) {
+                        //在此处可以自定义提示框，如果使用默认提示框不用复写hasNewApp方法
                         updateAppManager.showDialogFragment();
                     }
 
