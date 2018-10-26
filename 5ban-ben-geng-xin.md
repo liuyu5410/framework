@@ -5,7 +5,7 @@
 版本更新对UpdateApp进行了简单封装
 
 ```java
- * 版本更新
+/* 版本更新
  * @param activity
  * @param params 接口需要的参数
  * @param url 接口地址
@@ -79,6 +79,12 @@ VersionUpdate.update(this,params,url,new UpdateCallback() {
                         Toast.makeText(MainActivity.this, "没有新版本", Toast.LENGTH_SHORT).show();
                     }
                 });
+```
+
+#### 参考
+
+```
+com.xh.framework.update.VersionUpdate
 ```
 
 
