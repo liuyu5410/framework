@@ -42,5 +42,9 @@ protected abstract HttpHeaders getHttpHeaders();
 protected abstract HttpParams getCommonHttpParams();
 ```
 
+#### BaseActivity：
+
+项目中所有activity都继承BaseActivity，其中集成了Toolbar，右滑关闭当前页面，设置标题文字
+
 
 
