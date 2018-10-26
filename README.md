@@ -1,4 +1,4 @@
-# 小河基础平台（Android）
+# 小河基础开发平台（Android）
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+基础开发平台包括网络请求封装，常用工具封装，正则表达式，加密算法，sqlite封装，版本更新封装。
 
