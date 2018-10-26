@@ -14,5 +14,5 @@
 public static void update(Activity activity,Map<String, String> params, String url, UpdateCallback updateCallback)
 ```
 
-
+调用方法
 
