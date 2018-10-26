@@ -7,6 +7,7 @@
 * [XhApplication](xhapplication.md)
 * [BaseActivity](baseactivity.md)
 * [网络框架](2wang-luo-kuang-jia.md)
+  * [HttpRequestCallBack](2wang-luo-kuang-jia/httprequestcallback.md)
 * [图片加载](4tu-pian-jia-zai.md)
 * [sqlite](3sqlite.md)
 * [本地数据存储](ben-di-shu-ju-cun-chu.md)
