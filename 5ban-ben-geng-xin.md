@@ -2,7 +2,7 @@
 
 ---
 
-版本更新对UpdateApp进行了简单封装
+#### 版本更新对UpdateApp进行了简单封装
 
 ```java
 /* 版本更新
@@ -14,7 +14,9 @@
 public static void update(Activity activity,Map<String, String> params, String url, UpdateCallback updateCallback)
 ```
 
-调用方法
+#### 调用方法
+
+这里要复写UpdateCallback中的parseJson方法，这个方法需要返回一个UpdateAppBean对象，所以在这个方法里根据自己版本更新接口返回的json协议对json进行解析，把数据解析到UpdateAppBean对象中，最后返回UpdateAppBean对象。
 
 ```java
 Map<String, String> params = new HashMap<String, String>();
