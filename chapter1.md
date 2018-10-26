@@ -1,5 +1,7 @@
 # Gradle标准库
 
+以下依赖在基础库中已经引用，在项目中不用重复引用
+
 ```
 compile 'com.github.bumptech.glide:glide:latest.release' //加载图片
 compile 'com.google.code.gson:gson:latest.release' //json解析

@@ -12,6 +12,6 @@
 * [本地数据存储](ben-di-shu-ju-cun-chu.md)
 * [日志方法](ri-zhi-fang-fa.md)
 * [版本更新](5ban-ben-geng-xin.md)
-* [加密算法](6jia-mi-suan-fa.md)
 * [正则表达式](zheng-ze-biao-da-shi.md)
+* [加密算法](6jia-mi-suan-fa.md)
 
