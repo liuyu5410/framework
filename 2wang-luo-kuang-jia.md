@@ -57,5 +57,9 @@ HttpRequest.post(this, "http://ssqc.xiaohesoft.com/platformapi/index.php?act=use
  public static<T> void get(Activity activity, String url, HttpParams httpParams, final HttpRequestCallBack<T> callBack){
 ```
 
+#### 调用方法
+
+同POST请求
+
 
 
