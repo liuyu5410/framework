@@ -20,15 +20,15 @@ public static void update(Activity activity,Map<String, String> params, String u
 
 针对UpdateAppBean中的方法进行如下说明：
 
-updateAppBean.setUpdate\("Yes"\)或者updateAppBean.setUpdate\("No"\) ，如果为Yes程序就会调用hasNewApp方法，如果为No程序就会调用noNewApp方法。
+setUpdate\("Yes\No"\)如果为Yes程序就会调用hasNewApp方法，如果为No程序就会调用noNewApp方法。
 
-updateAppBean.setNewVersion\(\)为设置新版本号，
+setNewVersion\(\)为设置新版本号，
 
-updateAppBean.setApkFileUrl\(\)为设置apk下载地址
+setApkFileUrl\(\)为设置apk下载地址
 
-updateAppBean.setUpdateLog\(\)为更新日志
+setUpdateLog\(\)为更新日志
 
-updateAppBean.setConstraint\(\)
+setConstraint\(\)
 
 ```java
 Map<String, String> params = new HashMap<String, String>();
