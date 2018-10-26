@@ -43,5 +43,5 @@ HttpRequest.post(this, "http://ssqc.xiaohesoft.com/platformapi/index.php?act=use
                 });
 ```
 
-
+GET请求
 
