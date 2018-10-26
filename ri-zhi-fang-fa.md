@@ -18,7 +18,9 @@ XhLog.json(json);
 XhLog.xml(xmlStr);
 ```
 
-#### 参考：com.xh.framework.log.XhLog
+#### 参考
+
+com.xh.framework.log.XhLog
 
 
 
