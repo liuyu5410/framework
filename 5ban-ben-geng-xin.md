@@ -18,7 +18,7 @@ public static void update(Activity activity,Map<String, String> params, String u
 
 这里要复写UpdateCallback中的parseJson方法，这个方法需要返回一个UpdateAppBean对象，所以在这个方法里根据自己版本更新接口返回的json协议对json进行解析，把数据解析到UpdateAppBean对象中，最后返回UpdateAppBean对象。
 
-针对UpdateAppBean对象进行如下说明：
+针对UpdateAppBean中的方法进行如下说明：
 
 updateAppBean.setUpdate\("Yes"\)或者updateAppBean.setUpdate\("No"\) ，如果为Yes程序就会调用hasNewApp方法，如果为No程序就会调用noNewApp方法。
 
@@ -26,9 +26,9 @@ updateAppBean.setNewVersion\(\)为设置新版本号，
 
 updateAppBean.setApkFileUrl\(\)为设置apk下载地址
 
+updateAppBean.setUpdateLog\(\)为更新日志
 
-
-
+updateAppBean.setConstraint\(\)
 
 ```java
 Map<String, String> params = new HashMap<String, String>();
