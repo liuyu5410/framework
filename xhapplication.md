@@ -1,4 +1,4 @@
-# XhApplication:
+# XhApplication
 
 项目中Application需要继承XhApplication，并且实现其中的抽象方法。
 
