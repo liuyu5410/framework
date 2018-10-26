@@ -25,20 +25,20 @@ HttpParams params = new HttpParams();
         params.put("telephone","13522757781");
         params.put("password","12345446");
 HttpRequest.post(this, "http://ssqc.xiaohesoft.com/platformapi/index.php?act=user&op=login", params
-                , new HttpRequestCallBack<Object>() {
+                , new HttpRequestCallBack<UserBean>() {
                     @Override
-                    public void onSuccess(Object result) {
-
+                    public void onSuccess(UserBeanresult) {
+                        //接口访问成功，并且error_code为0，会调用这个方法
                     }
 
                     @Override
                     public void onException(String msg) {
-
+                        //网络请求异常会调用此方法
                     }
 
                     @Override
                     public void onError(int code, String msg) {
-                        Toast.makeText(OkGoActivity.this,code+"***" + msg,Toast.LENGTH_SHORT).show();
+                        //接口访问成功，并且error_code不为0，会调用这个方法
                     }
                 });
 ```
