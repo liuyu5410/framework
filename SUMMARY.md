@@ -1,11 +1,11 @@
 # Summary
 
 * [小河基础开发平台（Android）](README.md)
+* [目录规范](mu-lu-gui-fan.md)
 * [Gradle标准库](chapter1.md)
 * [基础平台集成](ji-chu-ping-tai-ji-cheng.md)
 * [XhApplication](xhapplication.md)
 * [BaseActivity](baseactivity.md)
-* [目录规范](mu-lu-gui-fan.md)
 * [网络框架](2wang-luo-kuang-jia.md)
 * [图片加载](4tu-pian-jia-zai.md)
 * [sqlite](3sqlite.md)
