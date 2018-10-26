@@ -23,7 +23,7 @@ params.put("apptype","1");
 VersionUpdate.update(this,params,url,new UpdateCallback() {
                     /**
                      * 解析json,自定义协议,逻辑自己写
-                     *
+                     * 
                      * @param json 服务器返回的json
                      * @return UpdateAppBean
                      */
