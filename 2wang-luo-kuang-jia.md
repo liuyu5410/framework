@@ -2,7 +2,7 @@
 
 ---
 
-基础框架中的网络请求对OkGo进行了封装
+对应的类是com.xh.framework.net.HttpRequest.java
 
 POST请求
 
