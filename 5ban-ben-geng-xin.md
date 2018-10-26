@@ -20,7 +20,7 @@ public static void update(Activity activity,Map<String, String> params, String u
 
 针对UpdateAppBean中的方法进行如下说明：
 
-setUpdate\("Yes\No"\)如果为Yes程序就会调用hasNewApp方法，如果为No程序就会调用noNewApp方法。
+setUpdate\("Yes\No"\)设置是否有更新，如果为Yes代表有更新程序就会调用hasNewApp方法，如果为No程序就会调用noNewApp方法。
 
 setNewVersion\(\)为设置新版本号，
 
