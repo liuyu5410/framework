@@ -83,9 +83,7 @@ VersionUpdate.update(this,params,url,new UpdateCallback() {
 
 #### 参考
 
-```
 com.xh.framework.update.VersionUpdate
-```
 
 
 
