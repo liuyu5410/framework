@@ -4,7 +4,7 @@
 
 版本更新对APPUpdate进行了简单封装
 
-```
+```java
  * 版本更新
  * @param activity
  * @param params 接口需要的参数
