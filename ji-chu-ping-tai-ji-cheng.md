@@ -6,45 +6,45 @@
 
 #### XhApplication:
 
-项目中Application需要继承XhApplication，并且实现其中的抽象方法。
 
-```
-/**
-*
-设置返回按钮
-*
-@return
-*/
-protected abstract int getBackIcon();
-```
-
-```
-/**
-*获取标题文字颜色
-*@return
-*/
-protected abstract int getTitleTextColor();
-```
-
-```
-/**
- * 网络请求的头，不可以有中文，不需要直接返回null就可以
- * @return
- */
-protected abstract HttpHeaders getHttpHeaders();
-```
-
-```
-/**
- * 获取公共参数，支持中文，直接传不需要自己编码，不需要直接返回null就可以
- * @return
- */
-protected abstract HttpParams getCommonHttpParams();
-```
 
 #### BaseActivity：
 
-项目中所有activity都继承BaseActivity，其中集成了Toolbar，右滑关闭当前页面，设置标题文字。如下
+项目中所有activity都继承BaseActivity，其中集成了Toolbar，右滑关闭当前页面，设置标题文字。如下：
+
+```java
+public class ButtonActivity extends BaseActivity {
+
+    @BindView(R.id.tv)
+    TextView tv;
+    @BindView(R.id.btn)
+    Button btn;
+
+    @Override
+    public int getLayout() {
+        return R.layout.button_layout;
+    }
+
+    @Override
+    public void init() {
+        showBack();
+        setCustomTitle(R.string.shop_cart);
+        setCustomTitle("购物车");
+    }
+
+    @OnClick({R.id.btn})
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.btn:
+                String tmp = btn.getText().toString();
+                tv.setText(tmp);
+                break;
+            default:
+                break;
+        }
+    }
+}
+```
 
 
 
