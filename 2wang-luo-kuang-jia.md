@@ -61,5 +61,22 @@ HttpRequest.post(this, "http://ssqc.xiaohesoft.com/platformapi/index.php?act=use
 
 同POST请求
 
+### 上传文件
 
+```java
+/**
+ * 上传文件（多张），不带加载框
+ * @param activity
+ * @param url
+ * @param params 文本参数
+ * @param fileList 文件
+ * @param callBack
+ * @param <T> 泛型,如果接口返回的是对象，直接传Bean，如果接口返回的是list,传List<Bean>
+ */
+ public static<T> void uploadFile(Activity activity, String url, HttpParams params, List<File> fileList, final HttpRequestCallBack<T> callBack)
+```
+
+#### 调用方法
+
+同POST请求方式一样，调用这个方法需要传文件list参数
 
