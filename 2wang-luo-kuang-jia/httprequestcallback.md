@@ -6,7 +6,7 @@ HttpRequestCallBack是网络数据解析回调接口
 
 ```java
 /**
-  * 成功回调
+  * error_code为0时回调
   * @param result
   */
   void onSuccess(T result);
@@ -17,7 +17,7 @@ HttpRequestCallBack是网络数据解析回调接口
 void onException(String msg);
 
 /**
-  * 失败回调,可以根据不同的code进行逻辑处理
+  * error_code为非0时回调,可以根据不同的code进行逻辑处理
   * @param code
   * @param msg
   */
