@@ -13,6 +13,5 @@
 * [日志方法](ri-zhi-fang-fa.md)
 * [版本更新](5ban-ben-geng-xin.md)
 * [加密算法](6jia-mi-suan-fa.md)
-* [常用基类](chang-yong-ji-lei.md)
-* BaseActivity
+* [BaseActivity](baseactivity.md)
 
