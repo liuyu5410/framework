@@ -16,7 +16,7 @@
 #### 2.使用方法
 
 ```java
-GlideApp.with(fragment)
+Glide.with(fragment) //这里Fragment和Activity都可以
   .load(url)
   .placeholder(R.drawable.placeholder) //占位符，不是必须
   .error(R.drawable.error) //错误符，不是必须
