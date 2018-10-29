@@ -6,11 +6,9 @@
 
 #### 1.创建数据库
 
-创建一个Object类型的List数组，并且实例化。
-
-将JavaBean实例化的对象添加到List中
-
-调用init方法传入需要参数进行数据库创建操作
+* 创建一个Object类型的List数组，并且实例化。
+* 将JavaBean实例化的对象添加到List中
+* 调用init方法传入需要参数进行数据库创建操作
 
 ```java
 List<Object> objectList = new ArrayList<>();
