@@ -13,5 +13,15 @@
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> //将Glide的缓存存储到公有SD卡上时用到
 ```
 
+#### 2.使用方法
+
+```
+GlideApp.with(fragment)
+  .load(url)
+  .placeholder(R.drawable.placeholder) //占位符，不是必须
+  .error(R.drawable.error) //错误符，不是必须
+  .into(view);
+```
+
 
 
