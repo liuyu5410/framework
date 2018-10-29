@@ -19,7 +19,7 @@ objectList.add(new RatingBean());
 XhSQLite.init(this,new MyCallBack(),1,"test.db",objectList);
 ```
 
-查看数据库中表创建情况如下
+查看数据库中表创建情况如下，通过查看数据库中的表发现，JavaBean类名的小写字母作为了表名
 
 ![](/assets/db_test.png)
 
