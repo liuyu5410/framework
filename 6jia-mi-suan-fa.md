@@ -6,8 +6,8 @@
 
 #### 1.md5加密
 
-```
-EncryptUtils.md5Encode(String/File);
+```java
+EncryptUtils.md5Encode(String/File); //参数可以传字符串类型和文件类型，返回的是md5加密后的字符串
 ```
 
 
