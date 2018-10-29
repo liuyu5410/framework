@@ -19,13 +19,13 @@ objectList.add(new RatingBean());
 XhSQLite.init(this,new MyCallBack(),1,"test.db",objectList);
 ```
 
-查看数据库中表创建情况如下，通过查看数据库中的表发现，JavaBean类名的小写字母作为了表名
+查看数据库中表创建情况如下，通过查看数据库中的表发现，JavaBean类名的小写字母作为了表名。
 
 ![](/assets/db_test.png)
 
 #### 2.插入数据
 
-调用insert方法
+2.1出入单条数据
 
 ```java
  AvatarBean avatarBean = new AvatarBean();
@@ -35,5 +35,5 @@ XhSQLite.init(this,new MyCallBack(),1,"test.db",objectList);
  XhSQLite.insert(avatarBean);
 ```
 
-
+2.2插入多条数据
 
