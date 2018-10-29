@@ -19,9 +19,9 @@ public class ButtonActivity extends BaseActivity {
 
     @Override
     public void init() {
-        showBack();
-        setCustomTitle(R.string.shop_cart);
-        setCustomTitle("购物车");
+        showBack(); //显示返回按钮 
+        setCustomTitle(R.string.shop_cart); //设置标题
+        setCustomTitle("购物车"); //设置标题
     }
 
     @OnClick({R.id.btn})
