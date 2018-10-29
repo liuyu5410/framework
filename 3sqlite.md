@@ -90,5 +90,11 @@ XhSQLite.update(avatarBean,"_ID = ?",new String[]{"1"});
 XhSQLite.deleteFrom(new AvatarBean());
 ```
 
+5.2按条件删除表中的数据
+
+```java
+XhSQLite.delete(new AvatarBean(),"_ID = ?",new String[]{"3"});
+```
+
 
 
