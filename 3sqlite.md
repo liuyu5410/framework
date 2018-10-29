@@ -23,3 +23,5 @@ XhSQLite.init(this,new MyCallBack(),1,"test.db",objectList);
 
 ![](/assets/db_test.png)
 
+2.插入数据
+
