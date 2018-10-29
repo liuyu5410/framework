@@ -1,8 +1,6 @@
 # XiaoHeAndroid
 
 * [小河基础开发平台（Android）](README.md)
-
-
 * [目录规范](mu-lu-gui-fan.md)
 * [Gradle标准库](chapter1.md)
 * [基础平台集成](ji-chu-ping-tai-ji-cheng.md)
