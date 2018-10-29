@@ -15,7 +15,7 @@
 
 #### 2.使用方法
 
-```
+```java
 GlideApp.with(fragment)
   .load(url)
   .placeholder(R.drawable.placeholder) //占位符，不是必须
