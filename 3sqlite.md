@@ -84,7 +84,7 @@ XhSQLite.update(avatarBean,"_ID = ?",new String[]{"1"});
 
 #### 5.删除数据
 
-5.1删除全部数据
+5.1删除表中全部数据
 
 ```java
 XhSQLite.deleteFrom(new AvatarBean());
