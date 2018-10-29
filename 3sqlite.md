@@ -58,10 +58,36 @@ XhSQLite.init(this,new MyCallBack(),1,"test.db",objectList);
 List<AvatarBean> avatarList = XhSQLite.query(new AvatarBean());
 ```
 
-3.2按条件查找
+##### 3.2按条件查找
 
 ```java
 List<AvatarBean> avatarList = XhSQLite.query(new AvatarBean(),"select * from avatarbean where _ID = ?",new String[]{"1"});
+```
+
+#### 4.更新数据
+
+```java
+AvatarBean avatarBean = new AvatarBean();
+avatarBean.setLarge("321312");
+avatarBean.setMedium("df2343");
+avatarBean.setSmall("dsiewwo");
+XhSQLite.update(avatarBean,"_ID = ?",new String[]{"1"});
+```
+
+更新前
+
+![](/assets/db_update.png)
+
+更新后
+
+![](/assets/update_db.png)
+
+#### 5.删除数据
+
+5.1删除全部数据
+
+```java
+XhSQLite.deleteFrom(new AvatarBean());
 ```
 
 

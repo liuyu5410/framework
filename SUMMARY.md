@@ -9,7 +9,7 @@
 * [网络框架](2wang-luo-kuang-jia.md)
   * [HttpRequestCallBack](2wang-luo-kuang-jia/httprequestcallback.md)
 * [图片加载](4tu-pian-jia-zai.md)
-* [sqlite](3sqlite.md)
+* [SQLite](3sqlite.md)
 * [本地数据存储](ben-di-shu-ju-cun-chu.md)
 * [日志方法](ri-zhi-fang-fa.md)
 * [版本更新](5ban-ben-geng-xin.md)
