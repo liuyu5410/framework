@@ -23,5 +23,17 @@ XhSQLite.init(this,new MyCallBack(),1,"test.db",objectList);
 
 ![](/assets/db_test.png)
 
-2.插入数据
+#### 2.插入数据
+
+调用insert方法
+
+```java
+ AvatarBean avatarBean = new AvatarBean();
+        avatarBean.setLarge("114234");
+        avatarBean.setMedium("ooiiew");
+        avatarBean.setSmall("oos");
+        XhSQLite.insert(avatarBean);
+```
+
+
 
