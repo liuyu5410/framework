@@ -50,5 +50,5 @@ XhSQLite.init(this,new MyCallBack(),1,"test.db",objectList);
  XhSQLite.insert(avatarBeanList);
 ```
 
-
+3.查询数据
 
