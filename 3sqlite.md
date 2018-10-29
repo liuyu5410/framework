@@ -50,5 +50,19 @@ XhSQLite.init(this,new MyCallBack(),1,"test.db",objectList);
  XhSQLite.insert(avatarBeanList);
 ```
 
-3.查询数据
+#### 3.查询数据
+
+##### 3.1查询某表中的全部数据
+
+```java
+List<AvatarBean> avatarList = XhSQLite.query(new AvatarBean());
+```
+
+3.2按条件查找
+
+```java
+List<AvatarBean> avatarList = XhSQLite.query(new AvatarBean(),"select * from avatarbean where _ID = ?",new String[]{"1"});
+```
+
+
 
