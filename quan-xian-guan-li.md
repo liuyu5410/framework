@@ -6,12 +6,12 @@
 PermissionUtil.permission(this, new AcpListener() {
             @Override
             public void onGranted() {
-                XhLog.d("同意");
+                //允许权限，在这里进行逻辑操作
             }
 
             @Override
             public void onDenied(List<String> permissions) {
-                XhLog.d(permissions.toString()+"被拒绝");
+                //不允许权限，在这里进行逻辑操作
             }
         }, Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CAMERA, Manifest.permission.SEND_SMS);
 ```
