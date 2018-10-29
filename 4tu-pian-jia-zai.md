@@ -23,5 +23,5 @@ GlideApp.with(fragment)
   .into(view);
 ```
 
-
+详细信息可以参考[Glide](https://muyangmin.github.io/glide-docs-cn/doc/placeholders.html)
 
