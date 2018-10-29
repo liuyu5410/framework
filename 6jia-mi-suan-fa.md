@@ -2,5 +2,9 @@
 
 ---
 
-引用com.xh.framework.utils.EncryptUtils
+### 引用com.xh.framework.utils.EncryptUtils类
+
+1.md5加密
+
+
 
