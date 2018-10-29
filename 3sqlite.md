@@ -2,7 +2,7 @@
 
 ---
 
-基础框架中对SQLiteOpenHelper进行了封装，XhSQLite是封装后的新类。封装之后JavaBean的类名作为数据库中的表名，数据库名需要在初始化时传入。在创建表时，会自动生成\_ID字段作为主键，并且自增
+基础框架中对SQLiteOpenHelper进行了封装，XhSQLite是封装后的新类。封装之后的XhSQLite和JavaBean配合使用，会将JavaBean的类名作为数据库中的表名，数据库名需要在初始化时传入。在创建表时，会自动生成\_ID字段作为主键，并且自增。
 
 #### 1.创建数据库
 
