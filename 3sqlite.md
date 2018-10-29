@@ -25,7 +25,7 @@ XhSQLite.init(this,new MyCallBack(),1,"test.db",objectList);
 
 #### 2.插入数据
 
-2.1出入单条数据
+##### 2.1出入单条数据
 
 ```java
  AvatarBean avatarBean = new AvatarBean();
@@ -35,5 +35,20 @@ XhSQLite.init(this,new MyCallBack(),1,"test.db",objectList);
  XhSQLite.insert(avatarBean);
 ```
 
-2.2插入多条数据
+##### 2.2插入多条数据
+
+```java
+ List<AvatarBean> avatarBeanList = new ArrayList<>();
+ AvatarBean avatarBean = new AvatarBean();
+ avatarBean.setLarge("114234");
+ avatarBean.setMedium("ooiiew");
+ avatarBean.setSmall("oos");
+ AvatarBean avatarBean2 = new AvatarBean();
+ avatarBean.setLarge("1");
+ avatarBean.setMedium("3ds");
+ avatarBean.setSmall("odfadsfos");
+ XhSQLite.insert(avatarBeanList);
+```
+
+
 
