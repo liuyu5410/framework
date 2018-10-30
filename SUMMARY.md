@@ -1,9 +1,9 @@
-# XiaoHeAndroid
+# Summary
 
 * [小河基础开发平台（Android）](README.md)
+* [基础平台集成](ji-chu-ping-tai-ji-cheng.md)
 * [目录规范](mu-lu-gui-fan.md)
 * [Gradle标准库](chapter1.md)
-* [基础平台集成](ji-chu-ping-tai-ji-cheng.md)
 * [XhApplication](xhapplication.md)
 * [BaseActivity](baseactivity.md)
 * [网络框架](2wang-luo-kuang-jia.md)
@@ -15,5 +15,5 @@
 * [版本更新](5ban-ben-geng-xin.md)
 * [正则表达式](zheng-ze-biao-da-shi.md)
 * [加密算法](6jia-mi-suan-fa.md)
-* [权限管理](quan-xian-guan-li.md)
+* 基础平台集成
 
