@@ -27,7 +27,7 @@ HttpParams params = new HttpParams();
 HttpRequest.post(this, "http://ssqc.xiaohesoft.com/platformapi/index.php?act=user&op=login", params
                 , new HttpRequestCallBack<UserBean>() {
                     @Override
-                    public void onSuccess(UserBeanresult) {
+                    public void onSuccess(UserBean result) {
                         //接口访问成功，并且error_code为0，会调用这个方法
                     }
 
