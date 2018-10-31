@@ -80,7 +80,7 @@ xml命名用小写字母加下划线
 
 左大括号不单独占一行，与其前面的代码位于同一行：
 
- 需要在条件语句周围添加大括号。
+需要在条件语句周围添加大括号。
 
 ```java
 class MyClass {
@@ -112,7 +112,7 @@ class MyClass {
 6. 私有函数
 7. 内部类或接口
 
- 例如：
+   例如：
 
 ```java
 public class MainActivity extends Activity {
@@ -145,6 +145,20 @@ public class MainActivity extends Activity {
 public User loadUser(Context context, int userId);
 // Callbacks always go last 
 public void loadUserAsync(Context context, int userId, UserCallback callback);
+```
+
+#### 3.5 Fragment传参
+
+启动相关 Fragment 在其内部输入 newInstance 即可，如下所示：
+
+```java
+public static FragmentState newInstance(User user) {
+    Bundle args = new Bundle();
+    args.putParcelable(ARGUMENT_USER, user);
+    FragmentState fragment = new FragmentState();
+    fragment.setArguments(args);
+    return fragment;
+}
 ```
 
 
