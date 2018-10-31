@@ -2,6 +2,10 @@
 
 ---
 
+### 说明
+
+如果请求结果是一个对象，例如是一个LoginBean的，在调用方法时直接使用OkGo.&lt;XhResponse&lt;LoginBean&gt;&gt;post
+
 ### POST请求
 
 ```java
@@ -9,19 +13,17 @@
 HttpParams params = new HttpParams();
 params.put("telephone","13522757781");
 params.put("password","1234596");
-OkGo.<LzyResponse<LoginBean>>post("http://ssqc.xiaohesoft.com/platformapi/index.php?act=user&op=login")//接口地址
+OkGo.<XhResponse<LoginBean>>post("http://ssqc.xiaohesoft.com/platformapi/index.php?act=user&op=login")//接口地址
                 .tag(this) //设置tag
                 .params(params) //添加参数
-                .execute(new EncryptCallback<LzyResponse<LoginBean>>(this) {
+                .execute(new EncryptCallback<XhResponse<LoginBean>>(this) {
                     @Override
-                    public void onSuccess(Response<LzyResponse<LoginBean>> response) {
+                    public void onSuccess(Response<XhResponse<LoginBean>> response) {
                         //请求成功
                         LoginBean loginBean = response.body().data;
                     }
                 });
 ```
-
-
 
 ### GET请求
 
@@ -30,12 +32,12 @@ OkGo.<LzyResponse<LoginBean>>post("http://ssqc.xiaohesoft.com/platformapi/index.
 HttpParams params = new HttpParams();
 params.put("telephone","13522757781");
 params.put("password","1234596");
-OkGo.<LzyResponse<LoginBean>>get("http://ssqc.xiaohesoft.com/platformapi/index.php?act=user&op=login")//接口地址
+OkGo.<XhResponse<LoginBean>>get("http://ssqc.xiaohesoft.com/platformapi/index.php?act=user&op=login")//接口地址
                 .tag(this) //设置tag
                 .params(params) //添加参数
-                .execute(new EncryptCallback<LzyResponse<LoginBean>>(this) {
+                .execute(new EncryptCallback<XhResponse<LoginBean>>(this) {
                     @Override
-                    public void onSuccess(Response<LzyResponse<LoginBean>> response) {
+                    public void onSuccess(Response<XhResponse<LoginBean>> response) {
                         //请求成功
                         LoginBean loginBean = response.body().data;
                     }
@@ -45,19 +47,23 @@ OkGo.<LzyResponse<LoginBean>>get("http://ssqc.xiaohesoft.com/platformapi/index.p
 ### 上传文件
 
 ```java
-/**
- * 上传文件（多张），不带加载框
- * @param activity
- * @param url
- * @param params 文本参数
- * @param fileList 文件
- * @param callBack
- * @param <T> 泛型,如果接口返回的是对象，直接传Bean，如果接口返回的是list,传List<Bean>
- */
- public static<T> void uploadFile(Activity activity, String url, HttpParams params, List<File> fileList, final HttpRequestCallBack<T> callBack)
+ //参数
+ HttpParams params = new HttpParams();
+ params.put("token","safasdfasfweeoi0923");
+ List<File> fileList = new ArrayList<>();
+ OkGo.<XhResponse<String>>post("http://ssqc.xiaohesoft.com/platformapi/index.php?act=seller&op=imageupload")//接口地址
+                .tag(this) //设置tag
+                .params(params)//添加参数
+                .addFileParams("file",fileList) //添加文件
+                .execute(new EncryptCallback<XhResponse<String>>(this) {
+                    @Override
+                    public void onSuccess(XhResponse<LzyResponse<String>> response) {
+                        //上传成功
+                    }
+                });
 ```
 
-#### 调用方法
+#### 
 
-同POST请求方式一样，调用这个方法需要传文件list参数
+
 
