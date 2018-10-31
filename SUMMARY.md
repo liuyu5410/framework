@@ -5,7 +5,7 @@
 * [目录规范](mu-lu-gui-fan.md)
 * [Gradle标准库](chapter1.md)
 * [XhApplication](xhapplication.md)
-* [BaseActivity](baseactivity.md)
+* [AbstractActivity](baseactivity.md)
 * [网络框架](2wang-luo-kuang-jia.md)
 * [图片加载](4tu-pian-jia-zai.md)
 * [SQLite](3sqlite.md)
