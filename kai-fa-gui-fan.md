@@ -70,9 +70,9 @@
 
 参数名以 lowerCamelCase 风格编写，参数应该避免用单个字符命名。
 
-#### 2.7xml命名
+#### 2.7资源文件命名
 
-xml命名用小写字母加下划线
+资源文件命名用小写字母加下划线
 
 ### 3代码样式规范
 
@@ -185,7 +185,7 @@ int longName =
 loadPicture(context, "https://blankj.com/images/avatar.jpg", ivAvatar, "Avatar of the user", clickListener);
 ```
 
- 我们应该使用如下规则：
+我们应该使用如下规则：
 
 ```java
 loadPicture(context,
