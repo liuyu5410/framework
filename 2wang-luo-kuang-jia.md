@@ -57,7 +57,7 @@ OkGo.<XhResponse<LoginBean>>get("http://ssqc.xiaohesoft.com/platformapi/index.ph
                 .addFileParams("file",fileList) //添加文件
                 .execute(new EncryptCallback<XhResponse<String>>(this) {
                     @Override
-                    public void onSuccess(XhResponse<XhResponse<String>> response) {
+                    public void onSuccess(Response<XhResponse<String>> response) {
                         //上传成功
                     }
                 });
