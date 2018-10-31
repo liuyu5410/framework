@@ -2,20 +2,23 @@
 
 ---
 
-对应的类是com.xh.framework.net.HttpRequest.java
-
 ### POST请求
 
 ```java
-/**
- * post请求，不带加载框
- * @param activity activity
- * @param url url
- * @param httpParams 参数
- * @param callBack 回调接口
- * @param <T> 泛型,如果接口返回的是对象，直接传Bean，如果接口返回的是list,传List<Bean>
- */
- public static<T> void post(Activity activity, String url, HttpParams httpParams, final HttpRequestCallBack<T> callBack)
+//参数
+HttpParams params = new HttpParams();
+params.put("telephone","13522757781");
+params.put("password","1234596");
+OkGo.<LzyResponse<LoginBean>>post("http://ssqc.xiaohesoft.com/platformapi/index.php?act=user&op=login")//接口地址
+                .tag(this) //设置tag
+                .params(params) //添加参数
+                .execute(new EncryptCallback<LzyResponse<LoginBean>>(this) {
+                    @Override
+                    public void onSuccess(Response<LzyResponse<LoginBean>> response) {
+                        //请求成功
+                        LoginBean loginBean = response.body().data;
+                    }
+                });
 ```
 
 #### 调用方法
