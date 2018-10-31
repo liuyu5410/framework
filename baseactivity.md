@@ -1,13 +1,11 @@
-```
-AbstractActivity
-```
+# AbstractActivity
 
 ---
 
 项目中所有activity都继承BaseActivity，其中集成了Toolbar，右滑关闭当前页面，设置标题文字。如下：
 
 ```java
-public class ButtonActivity extends BaseActivity {
+public class ButtonActivity extends AbstractActivity{
 
     @BindView(R.id.tv)
     TextView tv;
