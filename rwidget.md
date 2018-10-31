@@ -62,5 +62,5 @@
 | icon\_direction | drawable icon 位置{left,top,right,bottom} |
 | text\_typeface | 字体样式 |
 
-
+参考[RWidgetHelper](https://github.com/RuffianZhong/RWidgetHelper)
 

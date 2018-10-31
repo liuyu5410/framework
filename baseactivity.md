@@ -2,7 +2,7 @@
 
 ---
 
-项目中所有activity都继承BaseActivity，其中集成了Toolbar，右滑关闭当前页面，设置标题文字。如下：
+项目中所有activity都继承AbstractActivity，其中集成了Toolbar，右滑关闭当前页面，设置标题文字。如果需要还可以进行再次封装。具体使用如下：
 
 ```java
 public class ButtonActivity extends AbstractActivity{
