@@ -30,5 +30,21 @@ protected abstract int getTitleTextColor();
 protected abstract HttpParams getCommonHttpParams();
 ```
 
+```java
+/**
+ * finish数组中的activity，并清空数组，在退出登录时调用
+ */
+ public void clearActivity(){
+    if (stacks != null){
+            for (Activity activity : stacks){
+                activity.finish();
+            }
+            stacks.clear();
+            stacks = null;
+    }
+
+}
+```
+
 
 
