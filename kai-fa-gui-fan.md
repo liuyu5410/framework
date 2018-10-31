@@ -170,11 +170,29 @@ int longName = anotherVeryLongVariable + anEvenLongerOne - thisRidiculousLongOne
         + theFinalOne;
 ```
 
- 赋值操作符的换行我们放在其后，例如：
+赋值操作符的换行我们放在其后，例如：
 
-```
+```java
 int longName =
         anotherVeryLongVariable + anEvenLongerOne - thisRidiculousLongOne + theFinalOne;
+```
+
+#### 3.7多参数的换行
+
+当一个方法有很多参数或者参数很长的时候，我们应该在每个 , 后面进行换行。 比如：
+
+```java
+loadPicture(context, "https://blankj.com/images/avatar.jpg", ivAvatar, "Avatar of the user", clickListener);
+```
+
+ 我们应该使用如下规则：
+
+```java
+loadPicture(context,
+        "https://blankj.com/images/avatar.jpg",
+        ivAvatar,
+        "Avatar of the user",
+        clickListener);
 ```
 
 
