@@ -163,11 +163,18 @@ public static FragmentState newInstance(User user) {
 
 #### 3.6操作符的换行
 
- 除赋值操作符之外，我们把换行符放在操作符之前，例如：
+除赋值操作符之外，我们把换行符放在操作符之前，例如：
 
 ```java
 int longName = anotherVeryLongVariable + anEvenLongerOne - thisRidiculousLongOne
         + theFinalOne;
+```
+
+ 赋值操作符的换行我们放在其后，例如：
+
+```
+int longName =
+        anotherVeryLongVariable + anEvenLongerOne - thisRidiculousLongOne + theFinalOne;
 ```
 
 
