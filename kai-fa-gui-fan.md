@@ -64,5 +64,5 @@
 
 #### 2.5变量命名
 
-变量命名以`lowerCamelCase`风格为主。例如String firstName
+变量命名以`lowerCamelCase`风格为主。例如String firstName。尽量避免使用小写字母加下划线
 
