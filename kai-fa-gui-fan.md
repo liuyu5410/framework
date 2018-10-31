@@ -80,6 +80,8 @@ xml命名用小写字母加下划线
 
 左大括号不单独占一行，与其前面的代码位于同一行：
 
+ 需要在条件语句周围添加大括号。
+
 ```java
 class MyClass {
     int func() {
@@ -92,6 +94,57 @@ class MyClass {
         }
     }
 }
+```
+
+#### 3.2编写简短方法
+
+在可行的情况下，尽量编写短小精炼的方法。我们了解，有些情况下较长的方法是恰当的，因此对方法的代码长度没有做出硬性限制。如果某个方法的代码超出 40 行，请考虑是否可以在不破坏程序结构的前提下对其拆解。
+
+#### 3.3类成员的顺序
+
+这并没有唯一的正确解决方案，但如果都使用一致的顺序将会提高代码的可读性，推荐使用如下排序：
+
+1. 常量
+2. 字段
+3. 构造函数
+4. 重写函数和回调
+5. 公有函数
+6. 私有函数
+7. 内部类或接口
+
+ 例如：
+
+```java
+public class MainActivity extends Activity {
+    private static final String TAG = MainActivity.class.getSimpleName();
+    private String mTitle;
+    private TextView mTextViewTitle;
+
+    @Override
+    public void onCreate() { ...}
+
+    public void setTitle(String title) {
+        mTitle = title;
+    }
+
+    private void setUpView() { ...}
+
+    static class AnInnerClass {
+    }
+
+}
+```
+
+#### 3.4函数参数的排序
+
+* 在 Android 开发过程中，Context 在函数参数中是再常见不过的了，我们最好把 Context 作为其第一个参数。 
+* 正相反，我们把回调接口应该作为其最后一个参数。
+
+```java
+// Context always goes first
+public User loadUser(Context context, int userId);
+// Callbacks always go last 
+public void loadUserAsync(Context context, int userId, UserCallback callback);
 ```
 
 
