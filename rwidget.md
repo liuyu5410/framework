@@ -8,7 +8,7 @@
 
 以RTextView为例
 
-```xml
+```css
 <com.ruffian.library.widget.RTextView
     android:id="@+id/text6"
     android:layout_width="150dp"
