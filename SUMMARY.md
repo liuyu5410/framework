@@ -14,5 +14,4 @@
 * [版本更新](5ban-ben-geng-xin.md)
 * [正则表达式](zheng-ze-biao-da-shi.md)
 * [加密算法](6jia-mi-suan-fa.md)
-* 基础平台集成
 
