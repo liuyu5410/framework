@@ -36,5 +36,13 @@
 
 测试类的命名以它要测试的类的名称开始，以 Test 结束。例如：HashTest 或 HashIntegrationTest。
 
-接口（interface）：命名规则与类一样采用大驼峰命名法。
+接口（interface）：命名规则与类一样采用大驼峰命名法。
+
+#### 2.3方法名
+
+* 方法名都以 lowerCamelCase 风格编写。
+
+* 方法名通常是动词或动词短语。
+
+
 
