@@ -11,13 +11,30 @@
 
 ### 2.命名规范
 
- 代码中的命名严禁使用拼音与英文混合的方式，更不允许直接使用中文的方式。正确的英文拼写和语法可以让阅读者易于理解，避免歧义。
+代码中的命名严禁使用拼音与英文混合的方式，更不允许直接使用中文的方式。正确的英文拼写和语法可以让阅读者易于理解，避免歧义。
 
 #### 2.1包名
 
- 包名全部小写，连续的单词只是简单地连接起来，不使用下划线，采用反域名命名规则，全部使用小写字母。一级包名是顶级域名，通常为 com、edu、gov、net、org 等，二级包名为公司名，三级包名根据应用进行命名，后面就是对包名的划分了。一般编写按照mvc模式设计。
+包名全部小写，连续的单词只是简单地连接起来，不使用下划线，采用反域名命名规则，全部使用小写字母。一级包名是顶级域名，通常为 com、edu、gov、net、org 等，二级包名为公司名，三级包名根据应用进行命名，后面就是对包名的划分了。一般编写按照mvc模式设计。
 
 #### 2.2类名
 
-类名都以 UpperCamelCase 风格编写。
+* 类名都以 UpperCamelCase 风格编写。
+* 类名通常是名词或名词短语，接口名称有时可能是形容词或形容词短语。现在还没有特定的规则或行之有效的约定来命名注解类型。
+* 名词，采用大驼峰命名法，尽量避免缩写，除非该缩写是众所周知的， 比如 HTML、URL，如果类名称中包含单词缩写，则单词缩写的每个字母均应大写。
+
+| 类 | 描述 | 例如 |
+| :--- | :--- | :--- |
+| `Activity` 类 | `Activity` 为后缀标识 | 欢迎页面类 `WelcomeActivity` |
+| `Adapter` 类 | `Adapter` 为后缀标识 | 新闻详情适配器 `NewsDetailAdapter` |
+| 解析类 | `Parser` 为后缀标识 | 首页解析类 `HomePosterParser` |
+| 工具方法类 | `Utils` 或 `Manager` 为后缀标识 | 线程池管理类：`ThreadPoolManager` 日志工具类：`LogUtils`（`Logger` 也可） 打印工具类：`PrinterUtils` |
+| `Service` 类 | 以 `Service` 为后缀标识 | 时间服务 `TimeService` |
+| `BroadcastReceiver` 类 | 以 `Receiver` 为后缀标识 | 推送接收 `JPushReceiver` |
+| `ContentProvider` 类 | 以 `Provider` 为后缀标识 | `ShareProvider` |
+| 自定义的共享基础类 | 以 `Base` 开头 | `BaseActivity`, `BaseFragment` |
+
+测试类的命名以它要测试的类的名称开始，以 Test 结束。例如：HashTest 或 HashIntegrationTest。
+
+接口（interface）：命名规则与类一样采用大驼峰命名法。
 
