@@ -164,5 +164,29 @@ public class MainActivity extends AppCompatActivity {
 
 绑定Bitmap 资源：@BindBitmap\( \)
 
+写法同上
+
 绑定一个颜色值：@BindColor\( \)
+
+写法同上
+
+* **事件绑定：**
+
+ 绑定点击事件
+
+*  绑定控件点击事件：@OnClick\( \)
+*  绑定控件长按事件：@OnLongClick\( \)
+
+```
+   @OnClick(R2.id.button1 ) //给 button1 设置一个点击事件 
+  public void showToast(){
+        Toast.makeText(this, "is a click", Toast.LENGTH_SHORT).show();
+  } 
+   @OnLongClick( R2.id.button1 ) //给 button1 设置一个长按事件 
+  public boolean showToast2(){ 
+      Toast.makeText(this, "is a long click", Toast.LENGTH_SHORT).show(); return true ;
+  }
+```
+
+
 
