@@ -213,7 +213,7 @@ public void onViewClicked(View view) {
 
 6.选择最后一个后出现如下
 
-![](/assets/butterknife1.png)
+![](/assets/butterknife2.png)
 
 7.Activity中不选Init ButterKnife at current class，选择自己要生成的控件之后点击cofirm后就会自动绑定控件了。
 
