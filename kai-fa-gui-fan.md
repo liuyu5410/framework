@@ -257,8 +257,11 @@ public class TestActivity extends AppCompatActivity {
 
 /* Or you can
 * even do this. */
-
 ```
 
-4.4其他一些注释
+#### 4.4其他一些注释
+
+ AS 已帮你集成了一些注释模板，我们只需要直接使用即可，在代码中输入 todo、fixme 等这些注释模板，回车后便会出现如下注释。
+
+
 
