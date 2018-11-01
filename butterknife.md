@@ -142,6 +142,24 @@ public class MainActivity extends AppCompatActivity {
             <item>大连市</item>
         </string-array>
     </resources>
+-------------------------------------------------------------------------------------
+    public class MainActivity extends AppCompatActivity {
+        @BindView(R2.id.button) //绑定button 控件
+        public Button button;
+        @BindString(R2.string.app_name) //绑定资源文件中string字符串 
+        String str;
+
+        @BindArray(R2.array.city) //绑定string里面array数组 
+        String [] citys ; 
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main); 
+            //绑定activity
+            ButterKnife.bind( this ) ;
+            button.setText(citys[0]); 
+        } 
+    }
 ```
 
 绑定Bitmap 资源：@BindBitmap\( \)
