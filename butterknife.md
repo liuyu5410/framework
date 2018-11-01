@@ -13,7 +13,8 @@ ButterKnife是一个专注于Android系统的View注入框架,以前总是要写
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main); //绑定初始化ButterKnife ButterKnife.bind(this); 
+            setContentView(R.layout.activity_main); //绑定初始化
+            ButterKnife ButterKnife.bind(this); 
         }
     }
 ```
