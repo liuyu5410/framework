@@ -197,3 +197,7 @@ public void onViewClicked(View view) {
 
 还有很多事件，绑定和使用方法类似
 
+AS插件安装
+
+
+
