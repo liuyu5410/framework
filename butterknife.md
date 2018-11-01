@@ -43,5 +43,50 @@ ButterKnife是一个专注于Android系统的View注入框架,以前总是要写
     }
 ```
 
+**在Adapter中绑定ButterKnife：**
+
+在Adapter的ViewHolder中使用，将ViewHolder加一个构造方法，在new ViewHolder的时候把view传递进去。使用ButterKnife.bind\(this, view\)进行绑定，代码如下：
+
+```java
+    public class MyAdapter extends BaseAdapter {
+        @Override
+        public View getView(int position, View view, ViewGroup parent) {
+            ViewHolder holder;
+            if (view != null) {
+                holder = (ViewHolder) view.getTag();
+            } else {
+                view = inflater.inflate(R.layout.testlayout, parent, false);
+                holder = new ViewHolder(view);
+                view.setTag(holder);
+            }
+            holder.name.setText("Donkor");
+            holder.job.setText("Android"); // etc...
+            return view;
+        }
+
+        static class ViewHolder {
+            @BindView(R.id.title)
+            TextView name;
+            @BindView(R.id.job)
+            TextView job;
+
+            public ViewHolder(View view) {
+                ButterKnife.bind(this, view);
+            }
+        }
+    }
+```
+
+**ButterKnife的基本使用**
+
+1. **绑定View：**
+
+ 控件id 注解： @BindView（）
+
+```java
+@BindView( R2.id.button)  
+public Button button; 
+```
+
 
 
