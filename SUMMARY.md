@@ -18,4 +18,5 @@
 * [加密算法](6jia-mi-suan-fa.md)
 * [权限管理](quan-xian-guan-li.md)
 * [ButterKnife](butterknife.md)
+* [开发规范](kai-fa-gui-fan.md)
 
