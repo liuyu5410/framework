@@ -223,7 +223,26 @@ public class TestActivity extends AppCompatActivity {
 
 这样可以在每次新建类时自动添加头注释
 
-4.2方法注释
+#### 4.2方法注释
+
+一个成员方法（包括自定义成员方法、覆盖方法、属性方法）的方法头都必须做方法头注释，在方法前一行输入 /\*\* + 回车 或者设置 Fix doc comment（Settings -&gt; Keymap -&gt; Fix doc comment）快捷键，AS 便会帮你生成模板，我们只需要补全参数即可，如下所示。
+
+```java
+ /**
+  * bitmap 转 byteArr
+  * @param bitmap bitmap 对象
+  * @param format 格式
+  * @return 字节数组
+  */
+ public static byte[] bitmap2Bytes(Bitmap bitmap, Bitmap.CompressFormat format) {
+    if (bitmap == null) {return null;}
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    bitmap.compress(format, 100, baos);
+    return baos.toByteArray();
+ }
+```
+
+
 
 4.3块注释
 
