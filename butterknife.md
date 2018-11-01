@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
   }
 ```
 
- 指定多个id绑定事件：
+指定多个id绑定事件：
 
 ```java
 @OnClick({R.id.ll_product_name, R.id.ll_product_lilv, R.id.ll_product_qixian, R.id.ll_product_repayment_methods})
@@ -195,5 +195,5 @@ public void onViewClicked(View view) {
 }
 ```
 
-
+还有很多事件，绑定和使用方法类似
 
