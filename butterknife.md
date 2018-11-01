@@ -172,11 +172,9 @@ public class MainActivity extends AppCompatActivity {
 
 * **事件绑定：**
 
-  绑定点击事件
+绑定控件点击事件：@OnClick\( \)
 
-* 绑定控件点击事件：@OnClick\( \)
-
-* 绑定控件长按事件：@OnLongClick\( \)
+绑定控件长按事件：@OnLongClick\( \)
 
 ```java
    @OnClick(R2.id.button1 ) //给 button1 设置一个点击事件 
@@ -187,6 +185,14 @@ public class MainActivity extends AppCompatActivity {
   public boolean showToast2(){ 
       Toast.makeText(this, "is a long click", Toast.LENGTH_SHORT).show(); return true ;
   }
+```
+
+ 指定多个id绑定事件：
+
+```java
+@OnClick({R.id.ll_product_name, R.id.ll_product_lilv, R.id.ll_product_qixian, R.id.ll_product_repayment_methods})
+public void onViewClicked(View view) {
+}
 ```
 
 
