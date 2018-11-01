@@ -195,5 +195,37 @@ loadPicture(context,
         clickListener);
 ```
 
+### 4注释规范
+
+#### 4.1类注释
+
+每个类都应该有作者名，对自己的代码负责
+
+```java
+/**
+ * @author : LiuYu
+ * @time : 2018/11/01
+ * @desc :
+ */
+public class TestActivity extends AppCompatActivity {
+}
+```
+
+具体可以在 AS 中自己配制，进入 Settings -&gt; Editor -&gt; File and Code Templates -&gt; Includes -&gt; File Header，输入
+
+```java
+/**
+ *     @author  : ${USER}
+ *     @time    : ${YEAR}/${MONTH}/${DAY}
+ *     @desc    :
+ */
+```
+
+4.2方法注释
+
+4.3块注释
+
+4.4其他一些注释
+
 
 
