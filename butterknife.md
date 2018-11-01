@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
 * **绑定资源：**
 
- 绑定string 字符串：@BindString\(\)
+  绑定string 字符串：@BindString\(\)
 
 ```java
     public class MainActivity extends AppCompatActivity {
@@ -130,9 +130,21 @@ public class MainActivity extends AppCompatActivity {
     }
 ```
 
- 绑定string里面array数组：@BindArray\(\)
+绑定string里面array数组：@BindArray\(\)
 
- 绑定Bitmap 资源：@BindBitmap\( \)
+```java
+    <resources>
+        <string name="app_name">城市</string>
+        <string-array name="city">
+            <item>北京市</item>
+            <item>天津市</item>
+            <item>哈尔滨市</item>
+            <item>大连市</item>
+        </string-array>
+    </resources>
+```
 
- 绑定一个颜色值：@BindColor\( \)
+绑定Bitmap 资源：@BindBitmap\( \)
+
+绑定一个颜色值：@BindColor\( \)
 
