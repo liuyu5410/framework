@@ -79,14 +79,35 @@ ButterKnife是一个专注于Android系统的View注入框架,以前总是要写
 
 **ButterKnife的基本使用**
 
-1. **绑定View：**
+* **绑定View：**
 
- 控件id 注解： @BindView（）
+控件id 注解： @BindView（）
+
+```
+@BindView( R2.id.button)  
+public Button button;
+```
+
+布局内多个控件id 注解： @BindViews（）
 
 ```java
-@BindView( R2.id.button)  
-public Button button; 
+public class MainActivity extends AppCompatActivity {
+        @BindViews({R2.id.button1, R2.id.button2, R2.id.button3})
+        public List<Button> buttonList;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            ButterKnife.bind(this);
+            buttonList.get(0).setText("hello 1 ");
+            buttonList.get(1).setText("hello 2 ");
+            buttonList.get(2).setText("hello 3 ");
+        }
+    }
 ```
+
+ 
 
 
 
