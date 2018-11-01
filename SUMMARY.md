@@ -4,6 +4,7 @@
 * [基础平台集成](ji-chu-ping-tai-ji-cheng.md)
 * [目录规范](mu-lu-gui-fan.md)
 * [Gradle标准库](chapter1.md)
+* [ButterKnife](butterknife.md)
 * [XhApplication](xhapplication.md)
 * [AbstractActivity](baseactivity.md)
 * [网络框架](2wang-luo-kuang-jia.md)
@@ -16,5 +17,5 @@
 * [正则表达式](zheng-ze-biao-da-shi.md)
 * [加密算法](6jia-mi-suan-fa.md)
 * [权限管理](quan-xian-guan-li.md)
-* [开发规范](kai-fa-gui-fan.md)
+* ButterKnife
 
