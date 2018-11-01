@@ -221,11 +221,11 @@ public class TestActivity extends AppCompatActivity {
  */
 ```
 
+这样可以在每次新建类时自动添加头注释
+
 4.2方法注释
 
 4.3块注释
 
 4.4其他一些注释
-
-
 
