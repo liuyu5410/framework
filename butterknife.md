@@ -107,7 +107,32 @@ public class MainActivity extends AppCompatActivity {
     }
 ```
 
- 
+* **绑定资源：**
 
+ 绑定string 字符串：@BindString\(\)
 
+```java
+    public class MainActivity extends AppCompatActivity {
+        @BindView(R2.id.button)
+        //绑定button 控件
+        public Button button;
+        @BindString(R2.string.app_name)//绑定资源文件中string字符串 
+        String str;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            //绑定activity 
+            ButterKnife.bind(this);
+            button.setText(str);
+        }
+    }
+```
+
+ 绑定string里面array数组：@BindArray\(\)
+
+ 绑定Bitmap 资源：@BindBitmap\( \)
+
+ 绑定一个颜色值：@BindColor\( \)
 
