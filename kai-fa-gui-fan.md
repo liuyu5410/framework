@@ -242,9 +242,23 @@ public class TestActivity extends AppCompatActivity {
  }
 ```
 
+#### 4.3块注释
 
+块注释与其周围的代码在同一缩进级别。它们可以是 /\* ... \*/ 风格，也可以是 // ... 风格（//后最好带一个空格）。对于多行的 /\* ... \*/ 注释，后续行必须从 \* 开始， 并且与前一行的 \* 对齐。以下示例注释都是 OK 的。
 
-4.3块注释
+```java
+/*
+ * This is
+ * okay.
+ */
+
+// And so
+// is this.
+
+/* Or you can
+* even do this. */
+
+```
 
 4.4其他一些注释
 
