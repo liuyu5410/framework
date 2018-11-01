@@ -197,7 +197,23 @@ public void onViewClicked(View view) {
 
 还有很多事件，绑定和使用方法类似
 
-AS插件安装
+### AS安装ButterKnife插件
 
+1.启动AS
 
+2.点击File-&gt;Settings-&gt;Plugins-&gt;Browse Repositories
+
+3.输入ButterKnife，选择Android ButterKnife Plugin Plus，点击安装
+
+4.重启AS
+
+5.光标放在类中的R.layout.xxx位置，按Alt+Insert出现如下
+
+![](/assets/ButterKnife.png)
+
+6.选择最后一个后出现如下
+
+![](/assets/butterknife1.png)
+
+7.Activity中不选Init ButterKnife at current class，选择自己要生成的控件之后点击cofirm后就会自动绑定控件了。
 
