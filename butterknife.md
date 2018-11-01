@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
 
 写法同上
 
-* **事件绑定：**
+* **事件绑定：能绑定任何事件**
 
 绑定控件点击事件：@OnClick\( \)
 
