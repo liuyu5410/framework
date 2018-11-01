@@ -16,4 +16,5 @@
 * [正则表达式](zheng-ze-biao-da-shi.md)
 * [加密算法](6jia-mi-suan-fa.md)
 * [开发规范](kai-fa-gui-fan.md)
+* [权限管理](quan-xian-guan-li.md)
 

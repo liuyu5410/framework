@@ -3,17 +3,19 @@
 ---
 
 ```java
-PermissionUtil.permission(this, new AcpListener() {
+Acp.getInstance(this).request(new AcpOptions.Builder()
+                .setPermissions(Manifest.permission.CALL_PHONE)
+                .build(), new AcpListener() {
             @Override
             public void onGranted() {
-                //允许权限，在这里进行逻辑操作
+                // Todo 允许权限
             }
 
             @Override
             public void onDenied(List<String> permissions) {
-                //不允许权限，在这里进行逻辑操作
+                // Todo 不允许权限
             }
-        }, Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CAMERA, Manifest.permission.SEND_SMS);
+        });
 ```
 
 
